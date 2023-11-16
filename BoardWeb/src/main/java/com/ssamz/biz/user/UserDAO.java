@@ -89,6 +89,7 @@ public class UserDAO {
 				user.setRole(rs.getString("ROLE"));
 				userList.add(user);
 
+				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
