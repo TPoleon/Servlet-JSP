@@ -24,25 +24,21 @@ public class InsertUserServlet extends HttpServlet {
 		// 인코딩 처리
 		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("id");
-		String password = request.getParameter("password");
+		String password = request.getParameter("passeord");
 		String name = request.getParameter("name");
 		String role = request.getParameter("role");
 		String selfInfo = request.getParameter("selfInfo");
 		String[] languages = request.getParameterValues("languages");
 		String age = request.getParameter("age");
 
-		// 2. DB 연동 처리
-		UserVO vo = new UserVO();
-		vo.setId(id);
-		vo.setPassword(password);
-		vo.setName(name);
-		vo.setRole(role);
-
-		UserDAO dao = new UserDAO();
-		dao.insertUser(vo);
-
-		// 3. 화면 이동
-		response.sendRedirect("login.html");
+		/*
+		 * // 2. DB 연동 처리 UserVO vo = new UserVO(); vo.setId(id);
+		 * vo.setPassword(password); vo.setName(name); vo.setRole(role);
+		 * 
+		 * UserDAO dao = new UserDAO(); dao.insertUser(vo);
+		 * 
+		 * // 3. 화면 이동 response.sendRedirect("login.html");
+		 */
 
 		System.out.println("아이디 : " + id);
 		System.out.println("비밀번호 : " + password);

@@ -24,7 +24,7 @@ public class InsertUserServlet extends HttpServlet {
 		// 인코딩 처리
 		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("id");
-		String password = request.getParameter("password");
+		String password = request.getParameter("passeord");
 		String name = request.getParameter("name");
 		String role = request.getParameter("role");
 		String selfInfo = request.getParameter("selfInfo");

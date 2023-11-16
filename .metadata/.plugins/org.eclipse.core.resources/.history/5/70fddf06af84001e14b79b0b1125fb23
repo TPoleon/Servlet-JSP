@@ -24,7 +24,7 @@ public class InsertUserServlet extends HttpServlet {
 		// 인코딩 처리
 		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("id");
-		String password = request.getParameter("password");
+		String password = request.getParameter("passeord");
 		String name = request.getParameter("name");
 		String role = request.getParameter("role");
 		String selfInfo = request.getParameter("selfInfo");
@@ -42,19 +42,19 @@ public class InsertUserServlet extends HttpServlet {
 		dao.insertUser(vo);
 
 		// 3. 화면 이동
-		response.sendRedirect("login.html");
+//		response.sendRedirect("login.html");
 
-		System.out.println("아이디 : " + id);
-		System.out.println("비밀번호 : " + password);
-		System.out.println("이름 : " + name);
-		System.out.println("권한 : " + role);
-		System.out.println("자기 소개 : " + selfInfo);
-		System.out.println("언어 경험");
-		for (String language : languages) {
-			System.out.print(language + ", ");
-		}
-		System.out.println("");
-		System.out.println("나이 : " + age);
+//		System.out.println("아이디 : " + id);
+//		System.out.println("비밀번호 : " + password);
+//		System.out.println("이름 : " + name);
+//		System.out.println("권한 : " + role);
+//		System.out.println("자기 소개 : " + selfInfo);
+//		System.out.println("언어 경험");
+//		for (String language : languages) {
+//			System.out.print(language + ", ");
+//		}
+//		System.out.println("");
+//		System.out.println("나이 : " + age);
 
 	}
 }
