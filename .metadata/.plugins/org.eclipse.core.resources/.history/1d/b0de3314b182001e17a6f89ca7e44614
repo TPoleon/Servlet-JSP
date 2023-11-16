@@ -1,0 +1,11 @@
+package com.ssamz.biz.user;
+
+import java.sql.DriverManager;
+
+public class InsertUserTest {
+
+	public static void main(String[] args) {
+		DriverManager.registerDriver(new org.h2.Driv()));
+	}
+
+}
